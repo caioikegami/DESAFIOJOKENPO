@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>IkePô</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>JokenPô</h1>
+
+        <div class="buttons">
+            <button id="rock" onclick="playHuman('rock')">&#X1F44A;</button>
+            <button id="paper" onclick="playHuman('paper')">&#X1F590;</button>
+            <button id="scissors" onclick="playHuman('scissors')">&#X270C;</button>
+        </div>
+        <div class="versus">
+            <p class="human-choice-display"></p>
+            <p>X</p>
+            <p class="machine-choice-display"></p>
+        </div>
+        <div class="opponents">
+            <div class="eu"><p>Eu</p></div>
+            <div class="pc"><p>Computador</p></div>
+        </div>
+        <p class="result"></p>
+
+        <P class="your-score">Eu: <span id="human-score">0</span></P>
+        <P class="machine-score">Computador: <span id="machine-score">0</span></P>
+
+        <button onclick="resetGame()" id="button-reset">Reiniciar</button>
+
+    <script src="./scripts.js"></script>
+
+    </div>
+</body>
+
+</html>
