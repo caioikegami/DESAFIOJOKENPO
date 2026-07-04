@@ -10,11 +10,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; 
+    min-height: 100vh;
     padding: 10px;
 }
 
-body::before{
+body::before {
     content: "";
     position: fixed;
     top: 0;
@@ -22,7 +22,7 @@ body::before{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index:-1;
+    z-index: -1;
 }
 
 .container {
@@ -67,12 +67,13 @@ button:hover {
 }
 
 #scissors {
-
+    width: 45.38px;
     background-color: #7dbeed;
 }
 
 p {
     font-weight: bold;
+    text-align: center;
 }
 
 .your-score span {
@@ -154,7 +155,7 @@ p {
     align-items: center;
 }
 
-#button-reset{
+#button-reset {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,6 +164,36 @@ p {
 }
 
 @media (max-width: 768px) {
+
+    .container {
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .result {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: color 0.3s ease;
+}
+
+
+    #button-reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    background-color: #a200ff;
+}
+
     .versus {
         font-size: 40px;
         min-width: 100%;
@@ -178,8 +209,8 @@ p {
         height: 60px;
     }
 
-    .buttons button{
-        font-size: 40px;
+    .buttons button {
+        font-size: 20px;
     }
 }
 
@@ -188,7 +219,8 @@ p {
         width: 100%;
     }
 
-    .eu, .pc{
+    .eu,
+    .pc {
         width: 50%;
     }
 }
